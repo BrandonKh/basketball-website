@@ -34,14 +34,15 @@ This project will let users see the different players and each of their stats. W
 
 #### Installation
 
-Git Clone the repo
 
 ```html
-    npm i
     
-    npm install -D tailwindcss
+    > Clone the repo
+    
+    > npm i
+    
+    > npm i -D tailwindcss
 
-    > To get started please run the application
 ```
 
 ## API Reference
