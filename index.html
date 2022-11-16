@@ -198,9 +198,25 @@
                     const playerData = await response.json();
                     console.log(playerData);
                     const div = document.createElement('div');
-                    div.innerHTML = playerData.FirstName + ' ' + playerData.LastName + ' ' + playerData.Height + ' ' + playerData.Weight + ' ' + playerData.BirthCity + ' ' + playerData.BirthState + ' ' + playerData.BirthCountry + ' ' + playerData.College + ' ' + playerData.DraftYear + ' ' + playerData.DraftRound + ' ' + playerData.DraftNumber + ' ' + playerData.Salary;
-
+                    const img = document.createElement('img');
+                    img.src = playerData.PhotoUrl;
+                    div.innerHTML = playerData.FirstName + ' ' +
+                     playerData.LastName + ' ' +
+                      playerData.Height + ' ' +
+                       playerData.Weight + ' ' +
+                        playerData.BirthCity + ' ' +
+                         playerData.BirthState + ' ' +
+                          playerData.BirthCountry + ' ' +
+                           playerData.College + ' ' +
+                            playerData.DraftYear +
+                             ' ' +
+                              playerData.DraftRound +
+                               ' ' +
+                                playerData.DraftNumber + ' ' + playerData.Salary;
+                    
+                    
                     document.body.appendChild(div);
+                    document.body.appendChild(img);
                     
                 })
             }
